@@ -4,6 +4,6 @@ describe 'Sinatra Application' do
   it 'should get home page' do
     get '/'
     last_response.should be_ok
-    assert last_response.body.include?('Hello World')
+    last_response.body.should match(/Hello World/)
   end
 end

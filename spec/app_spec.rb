@@ -6,6 +6,6 @@ describe 'Sinatra Application' do
     last_response.should be_ok
   end
   it 'body should contain Hello World' do
-    last_response.body.should match(/Hello World!!/)
+    last_response.body.should match(/Hello World/)
   end
 end
